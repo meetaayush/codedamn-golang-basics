@@ -1,2 +1,2 @@
-tabs: ['main.go']
-run-button: 'go run main.go'
+tabs: ['strToInt.go']
+run-button: 'go run strToInt.go'
