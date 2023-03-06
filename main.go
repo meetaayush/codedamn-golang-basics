@@ -1,5 +1,8 @@
 package main
 
+import "fmt"
+
 func main() {
-	// write your code here
+	grades := 30
+	fmt.Printf("variable grades = %v is of type %T", grades, grades)
 }
