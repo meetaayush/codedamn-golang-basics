@@ -1,7 +1,5 @@
-package main
-
-import fmt
+package codedamn
 
 func main() {
-	fmt.Println("Hello World")
+	// write your code here
 }
