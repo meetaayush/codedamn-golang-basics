@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	var a string = "Cat"
-	var b int = 9
+	var a float32 = 9.01
+	var b int = 5
 	fmt.Println(a + b)
 }
