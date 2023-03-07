@@ -3,7 +3,6 @@ package main
 import "fmt"
 
 func main() {
-	var a, b float64 = 24.4, 3.0
-	fmt.Println(a / b)
-	fmt.Println(int(a) % int(b))
+	var a, b int = 4, 15
+	fmt.Println(a & b)
 }
