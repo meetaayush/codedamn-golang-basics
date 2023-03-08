@@ -3,6 +3,11 @@ package main
 import "fmt"
 
 func main() {
-	arr := [...]string{1, 2, 3, 4, 5}
-	fmt.Println(arr)
+	arr := [5]bool{true, true, true, true}
+
+	for i := 0; i < len(arr); i++ {
+		if arr[i] {
+			fmt.Println(i)
+		}
+	}
 }
