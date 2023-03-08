@@ -3,9 +3,12 @@ package main
 import "fmt"
 
 func main() {
-	arr := []int{-1, -2}
-	for _, value := range arr {
-		fmt.Println(value)
-	}
+	arr := [5]string{"a", "b", "c", "d", "e"}
+	slice := arr[:4]
+	fmt.Println(arr)
+	fmt.Println(slice)
+	slice[1] = "x"
+	fmt.Println(arr)
+	fmt.Println(slice)
 
 }
