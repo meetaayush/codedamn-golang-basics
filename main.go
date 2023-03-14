@@ -3,8 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	// write your code here
-	var scoreMap = map[string]string{}
-	scoreMap["Mark"] = "Home"
-	fmt.Println(scoreMap)
+	ascii_codes := map[string]string{}
+	ascii_codes["A"] = 65
+	fmt.Println(ascii_codes)
 }
