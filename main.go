@@ -3,7 +3,10 @@ package main
 import "fmt"
 
 func main() {
-	ascii_codes := map[string]string{}
+	ascii_codes := map[string]int{}
 	ascii_codes["A"] = 65
-	fmt.Println(ascii_codes)
+	_, found := ascii_codes["B"]
+	if found {
+		fmt.Println("key B was not found")
+	}
 }
