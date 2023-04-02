@@ -3,14 +3,13 @@ package main
 import "fmt"
 
 func main() {
-	farenheit := 50.0
-	celcius := FarenheitToCelcius(farenheit)
-	fmt.Printf("%.2f\n", celcius)
+	firstName, lastName := "Codedamn", "Playground"
+	fullName := GetFullName(firstName, lastName)
+	fmt.Println(fullName)
 }
 
-func FarenheitToCelcius(temp float64) float64 {
-	var celcius float64
+func GetFullName(firstName, lastName string) (fullName string) {
 	// write your code here
 
-	return celcius
+	return
 }
