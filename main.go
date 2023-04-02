@@ -3,24 +3,23 @@ package main
 import "fmt"
 
 type Movie struct {
-	name   string
-	rating float32
+	name    string
+	summary string
+	rating  float32
 }
 
-func getMovie(s string, r float32) (m Movie) {
-	m = Movie{
-		name:   s,
-		rating: r,
-	}
-	return
+func (m Movie) getSummary() {
+	m.summary = "summary"
 }
 
-func increaseRating(m *Movie) {
-	m.rating += 1.0
+func (m *Movie) increaseRating() {
+	m.rating += 1
 }
 
 func main() {
-	mov := getMovie("xyz", 2.0)
-	increaseRating(mov)
+	mov := Movie{"xyz", "", 2.1}
+	fmt.Printf("%+v", mov)
+	mov.increaseRating()
+	mov.getSummary()
 	fmt.Printf("%+v", mov)
 }
