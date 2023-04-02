@@ -15,6 +15,12 @@ func getMovie(s string, r float32) (m Movie) {
 	return
 }
 
+func increaseRating(m *Movie) {
+	m.rating += 1.0
+}
+
 func main() {
-	fmt.Printf("%+v", getMovie("xyz", 3.5))
+	mov := getMovie("xyz", 2.0)
+	increaseRating(mov)
+	fmt.Printf("%+v", mov)
 }
