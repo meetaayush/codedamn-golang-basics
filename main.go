@@ -7,9 +7,14 @@ type Movie struct {
 	rating float32
 }
 
+func getMovie(s string, r float32) (m Movie) {
+	m = Movie{
+		name:   s,
+		rating: r,
+	}
+	return
+}
+
 func main() {
-	m := Movie{name: "ABCD"}
-	var m2 Movie
-	fmt.Printf("%+v", m)
-	fmt.Printf("%+v", m2)
+	fmt.Printf("%+v", getMovie("xyz", 3.5))
 }
